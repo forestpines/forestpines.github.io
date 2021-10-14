@@ -11,3 +11,16 @@
     color:#926239;
     line-height:1.6;
   }
+
+  #showcase{
+    background-image:url('https://placekitten.com/200/300');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+  }
