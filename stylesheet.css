@@ -50,9 +50,18 @@
     color:#fff;
   }
 
-  .menu{
+  .bar .menuitems{
     width: 100%;
-    background-color: rgba(0,0,0,.4);
+    text-align: center;
+    box-shadow: 1px 2px 4px grey;
+    background: rgba(2,2,2,0.2);
+  }
+
+  .menuitems li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px;
+    margin: 0px 20px;
   }
   
   .partone{
