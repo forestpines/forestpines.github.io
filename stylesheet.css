@@ -15,10 +15,10 @@
 
   .menu{
     width: 100%;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.4)  ;
   }
 
-  .main{
+  #centrepiece{
     background-image:url('https://b50ym1n8ryw31pmkr4671ui1c64-wpengine.netdna-ssl.com/wp-content/blogs.dir/11/files/2018/04/Red-Fox-Beverly-Davis-Blog-1600x1000-1024x640.png');
     background-size:cover;
     background-position:center;
@@ -31,16 +31,16 @@
     padding:0 20px;
   }
 
-  .main h1{
+  #centrepiece h1{
     font-size:50px;
     line-height:1.2;
   }
   
-  .main p{
+  #centrepiece p{
     font-size:20px;
   }
   
-  .main .button{
+  #centrepiece .button{
     font-size:18px;
     text-decoration:none;
     color:#926239;
@@ -50,7 +50,7 @@
     margin-top:20px;
   }
   
-  .main .button:hover{
+  #centrepiece .button:hover{
     background:#926239;
     color:#fff;
   }
