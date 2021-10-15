@@ -62,6 +62,13 @@
     display: inline-block;
     padding: 30px;
     margin: 0px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .menuitems li:hover{
+    background: #054f9d;
+    color: #9cc6f3;
   }
   
   .partone{
