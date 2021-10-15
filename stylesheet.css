@@ -73,17 +73,16 @@
   
   .partone{
     padding:20px;
-    background:#0f2882;
-    color:rgb(174, 182, 233);
+    background: #ff9900;
+    color: #ffffff;
     text-align:center;
   }
   
-  .parttwo{
+  /* .parttwo{
     padding:20px;
     background:#f4f4f4;
     text-align:center;
   }
-  
   .partthree{
     display:flex;
   }
@@ -99,4 +98,4 @@
   
   #section-c .box-2{
     background:#f9f9f9;
-  }
+  } */
