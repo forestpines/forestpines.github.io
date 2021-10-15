@@ -53,7 +53,7 @@
   .bar .menuitems{
     width: 100%;
     text-align: center;
-    box-shadow: 1px 2px 4px grey;
+    /* box-shadow: 1px 2px 4px grey; */
     background: rgba(2,2,2,0.2);
   }
 
