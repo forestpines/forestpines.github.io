@@ -50,14 +50,21 @@
     color:#fff;
   }
 
-  .bar .menuitems{
+  .bar{
     width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%;
     text-align: center;
     /* box-shadow: 1px 2px 4px grey;
     background: rgba(2,2,2,0.2); */
-  }
+  } */
 
-  .menuitems li{
+  /* .menuitems li{
     list-style-type: none;
     display: inline-block;
     padding: 30px;
@@ -69,7 +76,7 @@
   .menuitems li:hover{
     background: #054f9d;
     color: #ffffff;
-  }
+  } */
   
   .partone{
     padding:20px;
