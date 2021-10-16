@@ -50,7 +50,7 @@ body {
 }
 
 .centretext {
-  color: white;
+  color: rgb(249, 253, 126);
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 80%;
@@ -67,7 +67,7 @@ body {
 .centretext p{
   font-size: 20;
   line-height: 1em;
-  color: rgb(246, 238, 73);
+  color:salmon;
   font-style: italic;
 }
 
