@@ -121,8 +121,8 @@ and the row height which will make it look better on mobile tablets and phones *
   color: white;
   background-color: black;
   position: absolute;
-  /* border-radius: 1em;
-  padding: 1em; */
+  border-radius: 1em;
+  padding: 1em;
   text-align: center;
   top: 80%;
   width: 100%
