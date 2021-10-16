@@ -128,7 +128,9 @@ and the row height which will make it look better on mobile tablets and phones *
   top: 80%;
   width: 100%;
 }
-
+a:visited {
+  color: pink;
+}
 .piclink {
   line-height: 1.5em;
   font-style: italic;
