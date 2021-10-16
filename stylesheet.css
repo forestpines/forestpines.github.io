@@ -51,15 +51,19 @@ body {
 
 .centretext {
   color: white;
-  margin-left: auto;
-  margin-right: auto;
-  width: 8em
+  border-radius: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 
 
 .centretext h1{
   font-size:50px;
-  line-height:1.2;
+  /* line-height:1.2; */
   
 }
 
