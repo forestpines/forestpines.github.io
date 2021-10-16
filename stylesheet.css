@@ -125,8 +125,9 @@ and the row height which will make it look better on mobile tablets and phones *
   /* padding: 1em; */
   text-align: center;
   top: 80%;
-  width: 100%
+  width: 100%;
+  max-height: 20%;
 }
 .bottom-text p a {
-  max-width: 90%;
+  max-width: 60%;
 }
