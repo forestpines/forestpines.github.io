@@ -134,6 +134,7 @@ a:visited {
 .piclink {
   line-height: 1.5em;
   font-style: italic;
+  font-size: 2em;
 }
 .piclink:link {
   color: rgb(246, 239, 103);
