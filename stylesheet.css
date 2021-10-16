@@ -51,8 +51,8 @@ body {
 .centretext {
   color: white;
   background-color: rgba(255, 255, 255, 0.3);
-  /* border-radius: 1em;
-  padding: 1em; */
+  border-radius: 1em;
+  padding: 1em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -62,7 +62,7 @@ body {
 
 
 .centretext h1{
-  font-size:50px;
+  font-size:40px;
   /* line-height:1.2; */
   
 }
