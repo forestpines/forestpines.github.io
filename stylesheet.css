@@ -72,9 +72,9 @@ body {
 
 /* setting the gap btw images, the number of images to column and assigning variables as well as row height */
 .image-grid {
-  --gap: 32px;
+  --gap: 16px;
   --num-cols: 4;
-  --row-height: 400px;
+  --row-height: 300px;
 /* border box makes sure the padding does not increase the entire width of the container
  and the padding incorporates the variable of the gap spacing above as padding input  */
   box-sizing: border-box;
