@@ -114,3 +114,17 @@ and the row height which will make it look better on mobile tablets and phones *
   }
 }
 
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text1 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
