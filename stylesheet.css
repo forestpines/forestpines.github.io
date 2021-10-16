@@ -129,5 +129,5 @@ and the row height which will make it look better on mobile tablets and phones *
   /* max-height: 20%; */
 }
 .bottom-text p a {
-  max-width: 60%;
+  max-width: 700px;
 }
