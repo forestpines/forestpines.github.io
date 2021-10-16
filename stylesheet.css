@@ -7,9 +7,9 @@ body {
 .main-img {
   /* The image used */
   background-image: url(./images/firstfoxlocationcomp.jpg);
-  /* min-height: 380px; */
 
-  /* Center and scale the image nicely */
+
+  /* Centered and scaled the background image */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   
-  /* Needed to position the navbar */
+  /* Positioning the navbar */
   position: relative;
 }
 
@@ -41,7 +41,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .navmenu a:hover {
@@ -52,8 +52,6 @@ body {
 .centretext {
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
-  /* border-radius: 20px;
-  padding: 20px; */
   position: absolute;
   top: 80%;
   left: 50%;
@@ -67,7 +65,10 @@ body {
 }
 
 .centretext p{
-  font-size:20px;
+  font-size: 20;
+  line-height: 1em;
+  color: rgb(246, 238, 73);
+  font-style: italic;
 }
 
 /* setting the gap btw images, the number of images to column and assigning variables as well as row height */
@@ -121,8 +122,6 @@ and the row height which will make it look better on mobile tablets and phones *
   color: white;
   background-color: black;
   position: absolute;
-  /* border-radius: 1em; */
-  /* padding: 1em; */
   text-align: center;
   line-height: 0.5em;
   top: 80%;
