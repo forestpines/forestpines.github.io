@@ -2,6 +2,7 @@
 /* Full screen photo landing page resource https://www.youtube.com/watch?v=hVdTQWASliE */
 body {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
 }
 .main-img {
   /* The image used */
@@ -62,11 +63,54 @@ body {
 
 
 .centretext h1{
-  font-size:40px;
-  /* line-height:1.2; */
-  
+  font-size:40px; 
 }
 
 .centretext p{
   font-size:20px;
 }
+
+/* setting the gap btw images, the number of images to column and assigning variables as well as row height */
+.image-grid {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+/* border box makes sure the padding does not increase the entire width of the container
+ and the padding incorporates the variable of the gap spacing above as padding input  */
+  box-sizing: border-box;
+  padding: var(--gap);
+/* Using grid display to set the number of columns and rows- set under image grid above and 
+1fr ensures they are equal width */
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  /* ensures that we have an unlimited number of rows of equal height in the grid as set above */
+  grid-auto-rows: var(--row-height);
+  /* creates a gap equal to the amount set under the variable above */
+  gap: var(--gap);
+}
+/* setes the width and height to constarin them image to its cell in the grid and images
+to main aspect ratio and the browser is resized */
+.image-grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* If image has this class I want the image to take up 2 columns */
+.image-feature-column {
+  grid-column: span 2;
+}
+
+/* if the images has this class I want it to take up two rows */
+.image-feature-row {
+  grid-row: span 2;
+}
+
+/* if the screen is smaller than the max below, this will change the number of columns to fit
+and the row height which will make it look better on mobile tablets and phones */
+@media screen and (max-width: 1024px) {
+  .image-grid {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+}
+
