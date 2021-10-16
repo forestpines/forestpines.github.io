@@ -50,10 +50,10 @@ body {
 }
 
 .centretext {
-  /* color: white; */
+  color: white;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 1em;
-  padding: 1em;
+  border-radius: 20px;
+  padding: 20px;
   position: absolute;
   top: 80%;
   left: 50%;
