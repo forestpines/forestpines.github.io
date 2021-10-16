@@ -49,11 +49,19 @@ body {
   color: black;
 }
 
-#centretext h1{
-  font-size:50px;
-  line-height:1.2;
+.centretext {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-#centretext p{
+
+.centretext h1{
+  font-size:50px;
+  line-height:1.2;
+  
+}
+
+.centretext p{
   font-size:20px;
 }
