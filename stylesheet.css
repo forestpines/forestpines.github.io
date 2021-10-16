@@ -5,7 +5,7 @@ body {
 }
 .main-img {
   /* The image used */
-  background-image: url(images/firstfoxlocation.jpg)
+  background-image: url(firstfoxlocation.jpg)
   /* min-height: 380px; */
 
   /* Center and scale the image nicely */
