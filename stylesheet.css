@@ -88,8 +88,10 @@ body {
   grid-auto-rows: var(--row-height);
   /* creates a gap equal to the amount set under the variable above */
   gap: var(--gap);
+  width: 100vw;
+  height: 100vh;
 }
-/* setes the width and height to constarin them image to its cell in the grid and images
+/* setes the width and height to constrain them image to its cell in the grid and images
 to main aspect ratio and the browser is resized */
 .image-grid > img {
   width: 100%;
