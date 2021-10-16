@@ -115,4 +115,15 @@ and the row height which will make it look better on mobile tablets and phones *
   }
 }
 
-
+.bottom-text {
+  color: white;
+  background-color: black;
+  border-radius: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+}
