@@ -51,7 +51,7 @@ body {
 
 .centretext {
   color: white;
-  background-color: rgba(9, 9, 9, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 1em;
   padding: 1em;
   position: absolute;
@@ -79,6 +79,7 @@ body {
  and the padding incorporates the variable of the gap spacing above as padding input  */
   box-sizing: border-box;
   padding: var(--gap);
+  background-color: black;
 /* Using grid display to set the number of columns and rows- set under image grid above and 
 1fr ensures they are equal width */
   display: grid;
