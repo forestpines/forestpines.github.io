@@ -131,13 +131,14 @@ and the row height which will make it look better on mobile tablets and phones *
 
 .piclink {
   line-height: 1.5em;
+  font-style: italic;
 }
 .piclink:link {
-  color: white;
+  color: rgb(246, 239, 103);
   text-decoration:none;
   }
   
   .piclink:hover{
-  color:rgb(250, 250, 168);
+  color:rgb(98, 252, 203);
   }
 
