@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- This was far and away my most time consuming page to style which I will get to in the comments on my CSS page -->
+<!-- This was far and away my most time consuming page to style which I will get to more fully in the comments on my CSS page -->
 <!-- Multiple page and stylesheet setup inspiration from here https://www.youtube.com/watch?v=iXSSHlOe47s -->	
 <!-- head setup resource https://www.youtube.com/watch?v=hVdTQWASliE */ -->	
 <head>
     <meta charset="UTF-8">
+     <!-- viewport in order to develop responsive items -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv= "X-UA-Compatible" content= "ie=edge">
+    <!-- path to my separate CSS page -->
     <link rel="stylesheet" href="stylesheet.css">
     <title>The Fox I Saw</title>
 </head>
 
 <body>
-    
+<!-- Placed the nav menu inside a container within the image grid so it wouldn't appear above my image grid -->
     <div class="image-grid">
         <div class="container">
+            <!-- resource https://www.w3schools.com/howto/howto_js_topnav.asp for creating my topnav-->
             <div class="navmenu">
+                <!-- links to my other two pages --admittedly the seriously link was so i could have a couple items in the nav menu and the origins page was much more work in css -->
                 <a href= "index.html">Home</a>
                 <a href= "seriously.html">Seriously?</a>
             </div>
         </div>
+        <!-- resource for responsive image grid https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive -->
+        <!-- resource for responsive image grid with larger feature image https://www.youtube.com/watch?v=rnhoY5Cdmy0 -->
+
+         <!-- all of these photos were taken in a surpised panic by my partner when the fox returned after I started making this website it was pretty poetic -->
+
+        <!-- image class applied to feature image foxfarthersquare so it can be styled differently than the other 4 images in CSS- these 5 original images were one of my rubric options -->
+
+        <!-- asset paths for my five images in the img src tags -->
         <img class="image-feature-column image-feature-row" src="./images/foxfarthersquare.jpg" alt="foxfar">
+        <!-- smaller images for the responsive gallery - i ran all of my images through tinypng so they wouldn't take so long to load but I wasn't super impressed with the conversion size so if I had the time I had planned on compressing these further. Even reducing the file size once made a big impact on load time -->
         <img src="./images/rathome1comp.jpg" alt="rathome1">
         <img src="./images/foxballcomp.jpg" alt="foxball">
         <img src="./images/foxclosercomp.jpg" alt="closefoxblur">
         <img src="./images/rathome2comp.jpg" alt="rathome2">
     </div>
+    <!-- I had initially wanted to add more text but it was too busy looking. I also intended to make the text responsive like the image grid but ran out of time sadly.-->
+    <!-- the text has a class for styling -->
     <div class="bottom-text">
         <p> Deep in the lush vistas surrounding a 16 lane expressway, the recent demolition of a commercial "park" unleashed nature's hot pockets for small predators- rats.  
         </p>
+        <!-- oh so this was fun- I had trouble getting my p text to centre and wrap - a strangely less complicated program after getting through an image grid, so in the matter of time management, I made a seerate p tag so I could place the following on the next line and adjust my spacing btw the two -->
         <p>On a walk one night, I thought I saw an unleashed dog trotting down a condo sidewalk. Or was it a common housecat?</p>
 
-        
+        <!-- my two additional links to outside sources below and given a class so I could play with colour and hover in my CSS page -->
         <a href="https://www.welcomewildlife.com/wp-content/uploads/2019/01/Red-fox-300-0-%C2%A9-Stanislav-Duben-Shutterstock-e1563829913951.jpg" class="piclink">I need a photo that wasn't taken in a panic.</a>
         <a href="https://images2.minutemediacdn.com/image/upload/c_crop,h_1349,w_2400,x_0,y_54/f_auto,q_auto,w_1100/v1627668098/shape/mentalfloss/59739-gettyimages-157561682.jpg" class="piclink size2">Maybe one more.</a>
 

@@ -1,40 +1,47 @@
 /* CSS Document */
-/* Full screen photo landing page resource https://www.youtube.com/watch?v=hVdTQWASliE */
+
+/* Multiple page and stylesheet setup inspiration from here https://www.youtube.com/watch?v=iXSSHlOe47s */
+/* Full screen photo landing page and head setup resource https://www.youtube.com/watch?v=hVdTQWASliE */
+
+/* font family style and margin setting for entire body section of pages */
 body {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
 }
+/* location of the background image stored in my assets - this is the main background image show in html for index and seriously pages */
 .main-img {
-  /* The image used */
+  /* The image used in my images assets folder*/
   background-image: url(./images/firstfoxlocationcomp.jpg);
-
-
-  /* Centered and scaled the background image */
+  /* styling to center and style the background image */
   background-position: center;
   background-repeat: no-repeat;
+  /* styling to ensure background image covers the whole page and 100% of the viewport */
   background-size: cover;
   height: 100vh;
+  /* use of flexbox to create a flex conatiner with the parent elementin this case the parent element ins the main background image */
   display: flex;
+  /* using column flexbox display in text box to align items top to bottom with the nav box and text over the main background image on the index.html and seriously.html pages */
   flex-direction: column;
   
   /* Positioning the navbar */
   position: relative;
 }
 
-/* Position the navbar container inside the image */
+/* styling for navbar container inside the image */
 .container {
   position: absolute;
   margin: 20px;
   width: auto;
 }
 
-/* The navbar */
+/* Styling for the nav menu on all three pages including the background color and making sure the text all fits in the element */
 .navmenu {
   overflow: hidden;
   background-color: #333;
 }
 
-/* Navbar links */
+/* Styling Navbar links to the other pages including the color of the tezt, the alignment of the text inside the navbar padding and font size */
+/* topnavresource https://www.w3schools.com/howto/howto_js_topnav.asp */
 .navmenu a {
   float: right;
   color: #f2f2f2;
@@ -43,15 +50,19 @@ body {
   text-decoration: none;
   font-size: 18px;
 }
-
+/* styling to change the color of menu bar and text when mouse hovers over it */
 .navmenu a:hover {
   background-color: #ddd;
   color: black;
 }
 
+/* styling and positiong the main text for h1 and p tags on index.html and seriously.html pages */
 .centretext {
   color: rgb(249, 252, 181);
+  /* applied transparency behind the text - the 0.3 is the alpha channel where you apply transparency*/
+  /* https://www.w3schools.com/css/css3_colors.asp */
   background-color: rgba(0, 0, 0, 0.3);
+  /* positioning h1 text 80 percent from the top of the page and 50 percent from the left */
   position: absolute;
   top: 80%;
   left: 50%;
@@ -59,18 +70,19 @@ body {
   transform: translate(-50%, -50%)
 }
 
-
+/* CSS overide to make just the text of the H1 bigger on the index and seriously pages */
 .centretext h1{
   font-size:40px; 
 }
-
+/* CSS overide to make just the text of the p smaller on the index and seriously pages and to make it a different color as well as italicized */
 .centretext p{
   font-size: 30px;
+  /* The line spacing was mroe than I wanted so I bumped the line height down */
   line-height: 0.5em;
   color:rgb(250, 184, 177);
   font-style: italic;
 }
-
+/* styling for the Image grid on the Origins page */
 /* setting the gap btw images, the number of images to column and assigning variables as well as row height */
 .image-grid {
   --gap: 16px;
@@ -78,6 +90,7 @@ body {
   --row-height: 300px;
 /* border box makes sure the padding does not increase the entire width of the container
  and the padding incorporates the variable of the gap spacing above as padding input  */
+ /* worked with this tutorial as a resource https://www.youtube.com/watch?v=rnhoY5Cdmy0 */
   box-sizing: border-box;
   padding: var(--gap);
   background-color: black;
@@ -85,39 +98,40 @@ body {
 1fr ensures they are equal width */
   display: grid;
   grid-template-columns: repeat(var(--num-cols), 1fr);
-  /* ensures that we have an unlimited number of rows of equal height in the grid as set above */
+  /* ensures that I have an unlimited number of rows of equal height in the grid as set above */
   grid-auto-rows: var(--row-height);
   /* creates a gap equal to the amount set under the variable above */
   gap: var(--gap);
+  /* ensures that my container of image grid for the image gallery takes up the full viewport */
   width: 100vw;
   height: 100vh;
 }
-/* setes the width and height to constrain them image to its cell in the grid and images
-to main aspect ratio and the browser is resized */
+/* setes the width and height to constrain the image to its cell in the grid and images
+to main aspect ratio if the browser is resized */
 .image-grid > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+/* CSS override styling for the larger feature image in my gallery so it Tkaes up more space  */
 /* If image has this class I want the image to take up 2 columns */
 .image-feature-column {
   grid-column: span 2;
 }
 
-/* if the images has this class I want it to take up two rows */
+/* if the image has this class I want it to take up two rows */
 .image-feature-row {
   grid-row: span 2;
 }
 
-/* if the screen is smaller than the max below, this will change the number of columns to fit
-and the row height which will make it look better on mobile tablets and phones */
+/* media used to make the image grid responsive if the screen is smaller than the max below, this will change the number of columns to fit and the row height which will make it look better on mobile tablets and phones */
 @media screen and (max-width: 1024px) {
   .image-grid {
     --num-cols: 2;
     --row-height: 200px;
   }
 }
-
+/* CSS override to adjust the text witht he bottom text class on my origins page */
 .bottom-text {
   color: white;
   background-color: black;
@@ -127,23 +141,28 @@ and the row height which will make it look better on mobile tablets and phones *
   top: 80%;
   width: 100%;
 }
+
+/* styling the color of my link on the origins page once it has been clicked */
 a:visited {
   color: pink;
 }
+
+/* CSS override so my link text stands out from the bottom text in terms of size and italics */
 .piclink {
   line-height: 1.5em;
   font-style: italic;
   font-size: 1.5em;
 }
+/* styling for the link before it has been clicked */
 .piclink:link {
   color: rgb(246, 239, 103);
   text-decoration:none;
   }
-  
+  /* styling the color change when the mouse hovers over one of the two external links */
   .piclink:hover{
   color:rgb(98, 252, 203);
   }
-
+/* CSS overide so the text of the second external link is a bit smaller to distinguish between the links */
   .size2 {
     font-size: 1em;
   }
