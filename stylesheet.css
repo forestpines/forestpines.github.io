@@ -27,6 +27,7 @@ body {
   position: relative;
 }
 
+/* item one a nav menu bar */
 /* styling for navbar container inside the image */
 .container {
   position: absolute;
@@ -82,6 +83,9 @@ body {
   color:rgb(250, 184, 177);
   font-style: italic;
 }
+/* styling for item two five unique images */
+/* also styling for item 4 responsive design so container of of images adjust with the media screen break point further down */
+
 /* styling for the Image grid on the Origins page */
 /* setting the gap btw images, the number of images to column and assigning variables as well as row height */
 .image-grid {
@@ -124,6 +128,8 @@ to main aspect ratio if the browser is resized */
   grid-row: span 2;
 }
 
+/* styling for item 4 responsive design */
+
 /* media used to make the image grid responsive if the screen is smaller than the max below, this will change the number of columns to fit and the row height which will make it look better on mobile tablets and phones */
 @media screen and (max-width: 1024px) {
   .image-grid {
@@ -142,6 +148,8 @@ to main aspect ratio if the browser is resized */
   top: 80%;
   width: 100%;
 }
+
+/* styling for item three two external links */
 
 /* styling the color of my link on the origins page once it has been clicked */
 a:visited {
