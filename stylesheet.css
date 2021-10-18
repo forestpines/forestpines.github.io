@@ -137,6 +137,7 @@ to main aspect ratio if the browser is resized */
   background-color: black;
   position: absolute;
   text-align: center;
+  /* the default line spacing was much too far apart and looked terrible and 0.5em was just the ticket */
   line-height: 0.5em;
   top: 80%;
   width: 100%;
